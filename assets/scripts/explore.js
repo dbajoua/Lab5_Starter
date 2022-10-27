@@ -37,6 +37,7 @@ function init() {
   let pressButton = document.getElementsByTagName("button")[0];
   pressButton.addEventListener('click', speakOut);
 
+  //speaking 
   function speakOut() {
     //access voice
     //access textarea/input
@@ -48,9 +49,24 @@ function init() {
 
    utterThis.voice = voices[selectedOption];
    synth.speak(utterThis);
-   
+
+   //image change
+   let displayImage = document.getElementById("explore").getElementsByTagName("img")[0];
+   displayImage.src = "assets/images/smiling-open.png";
+
+   utterThis.addEventListener('end', endFace);
+
+   function endFace() {
+     let displayImage = document.getElementById("explore").getElementsByTagName("img")[0];
+     displayImage.src = "assets/images/smiling.png";
+ 
+   }
+
+
 
   }
+
+ 
 
 
   
