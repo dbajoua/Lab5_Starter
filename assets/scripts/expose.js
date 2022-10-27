@@ -46,6 +46,9 @@ function init() {
       let displayImage = document.getElementById("expose").getElementsByTagName("img")[0];
       displayImage.src = "assets/images/party-horn.svg";
 
+      const jsConfetti = new JSConfetti();
+      jsConfetti.addConfetti();
+
       //audio change
       let partyAudio = document.getElementsByClassName("hidden")[0];
       partyAudio.src = "assets/audio/party-horn.mp3";
