@@ -1,5 +1,5 @@
 # Lab 5 - Starter
-Delvin Bajoua
+Delvin Bajoua <br>
 Yanxiong Chen
 
 Continuous Integration Repo:
